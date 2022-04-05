@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/calulate.js"></script>
+    <title>BMI Calculator</title>
+</head>
+<body>
+   
+    <div class="card-rounded p-5 m-2 bg-warning" style="width:1000px;--bs-bg-opacity: .1;">
+        <div class="card-body pt-5">
+            <h5 class="card-header text-center">BMI Calculator</h5>
+        </div>
+   
+   
+    <div class="p-1 m-1 col-8">
+       <label>Enter height in cm</label>
+       <input id="h-id" type="text" class="form-control">
+       </div>
+
+       <div class="p-1 m-1 col-8">
+       <label>Enter weight in kg</label>
+       <input id="w-id" type="text" class="form-control">
+       </div>
+
+       <button type="submit" class="btn btn-primary p-2 m-2" onclick="calcualteBMI()">Calculate BMI</button>
+       <div class="bmi p-1 m-1" >
+            <h5>BMI Value: </h5>
+            <div id="bmi-output"></div>
+       </div>
+       <div class="status p-1 m-1">
+            <h5>BMI status: </h5>
+            <div id="bmi-status"></div>
+       </div>
+   
+</div>
+</body>
+</html>
